@@ -1,0 +1,79 @@
+/* Acá vamos a crear el Root, es donde estan las reglas principales del CSS como los colores a utilizar */
+:root{
+    --c-dark: #212529;
+    --c-brand: #b71c1c;
+    --c-brand-light: #f64d40;
+    --font-base: "Montserrat", montserrat;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.8);
+    --transition: all 0.5 ease;
+}
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: white;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: var(---transition);
+}
+a:hover{
+    color: var(--c-brand-light);
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.navbar{
+    background-color: var(--c-brand);
+}
+.navbar-collapse a{
+    color: white;
+    margin-left: 2vh;
+}
+#hero {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/images/hero-1.jpg);
+}
+#hero h1, #hero h2{
+    filter: drop-shadow(3px 3px 3px #000);
+}
+#hero h1{
+    font-size: 10vh;
+}
+.cardset{
+    background-color: var(--c-brand);
+    height: 50%;
+    width: 50%;
+}
+.imagecard{
+    padding: 0px;
+}
+.imagecard img{
+    height: 100%;
+    width: 100%;
+}
+
+.cardtext{
+    margin: 20vh;
+    font-size: 2vh;
+}
+
+
+
+/*Esta es una regla creada para no poder seleccionar el texto en los títulos, por cuestiones estéticas*/
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
