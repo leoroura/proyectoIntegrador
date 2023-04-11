@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiClub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo-light.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html#team">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking min-vh-100">
+        <div class="container-fluid form-booking">
+            <div class="row form-title text-center">
+                <div class="col-12">
+                    <h2>¡Haz tu reserva online!</h2>
+                    <h2>Completa el siguiente formulario</h2>
+                </div>                
+            </div>
+
+            
+            <div class="row">
+                <div class="col-12">
+                    <form class="formulario-booking">
+                        <div class="row form name">
+                            <div class="col-12">
+                                <label for="nombre">Nombre y Apellido</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" id="nombre">
+                            </div>
+                        </div>
+
+                        <div class="row form phone">
+                            <div class="col-12">
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="number" id="telefono">
+                            </div>
+                        </div>
+
+                        <div class="row form date-time">
+                            <div class="col-12 col-lg-2">
+                                <label for="fecha">Fecha</label>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <input type="date" id="fecha">
+                            </div>
+
+                            <div class="col-12 col-lg-2">
+                                <label for="hora">Hora</label>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <input type="time" id="hora">
+                            </div>
+                        </div>
+
+                        <div class="row form amount">
+                            <div class="col-12">
+                                <label for="comensales">Comensales</label>
+                            </div>
+                            <div class="col-12">
+                                <select id="comensales" class="form-select">
+                                    <option selected disabled>Seleccione la cantidad de personas</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row button-booking text-end">
+                            <div class="col-12">
+                                <input type="submit" value="Confirmar reserva">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <footer>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
     --c-dark: #212529;
     --c-brand: #b71c1c;
     --c-brand-light: #f64d40;
+    --c-green: #8bc34a;
     --font-base: "Montserrat", montserrat;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.8);
     --transition: all 0.5 ease;
@@ -47,70 +48,143 @@ img{
 #hero h1{
     font-size: 8vh;
 }
-.cardset,
-.form {
-    background-color: var(--c-brand);
 
+.cardset {
+    background-color: var(--c-brand);
 }
 .imagecard{
     padding: 0px;
-  
 }
 
-
-.imagecard img{
-    max-height: 100%;
+.image {
     width: 100%;
-    
+    height: 100%;
 }
-
 
 .cardtext{
     margin: 3vh;
 }
 
-.form {
-    padding-top: 2rem;
+/* CONTACTO */
+
+.contact {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(./assets/images/contacto.jpg);
+    overflow: auto;
+    position: relative;    
+}
+
+.formulario {
+    max-width: max-content;
+    margin: auto;
 }
 
 .form-title {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.campo input {
-    width: 100%;
-    border: none;
-    padding: .5rem;
-    border-radius: .5rem;
-    margin: .5rem;
-    
-    
-}
-
-.campo textarea {
-    border-radius: .5rem;
-    border: none;
-    width: 100%;
-    margin: .5rem;
-}
-
-
-
-.campo .button-contact {
-    width: auto;
-    padding: .5rem;
-    background-color: var(--c-brand-light);
     color: white;
-    border: 1px solid white;
+    margin: 3rem 0;
+}
+
+.form-contact {
+    position: absolute;
+    top: 5rem;
+}
+
+.form-row {
+    margin: 1rem 0;
+}
+
+.textarea {
+    width: 100%;
+    height: 8rem;
+    border-radius: .5rem;
+}
+
+.mensaje {
+    margin-top: .5rem;
+    padding: 0;
+}
+
+.form-button {
+    justify-content: end;
+}
+
+input {
+    border-radius: .5rem;
+}
+
+.button {
+    border: 1px solid var(--c-dark);
+    background-color: var(--c-brand);
+    color: white;
+    font-weight: bold;
+    padding: .8rem;
+}
+
+.button:hover {
+    background-color: var(--c-brand-light);
+}
+
+/* RESERVAS */
+
+.booking {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/images/contacto.jpg);
+    overflow: auto;
+    position: relative;
+}
+
+.form-booking {
+    background-color: var(--c-dark);
+    width: fit-content;
+    border-radius: .5rem;
+}
+
+.form-booking h2 {
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
-.campo .button-contact:hover {
-    background-color: var(--c-brand);
+.form {
+    margin: 1rem .5rem;
 }
 
+.name input {
+    width: 100%;
+}
 
+.button-booking input {
+    background-color: var(--c-brand);
+    color: white;
+    border: 1px solid var(--c-dark);
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.button-booking input:hover {
+    background-color: var(--c-brand-light);
+}
+
+.error {
+    background-color: var(--c-brand);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.confirmacion {
+    background-color: var(--c-green);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+}
 
 
 @media (min-width: 769px) {
@@ -119,19 +193,18 @@ img{
         font-size: 2vh;
     }
 
-    .campo input {
-        width: 80%;
-    }
-
-    .campo textarea {
-        width: 80%;
-    }
-
-    .campo .button-contact {
-        margin-right: 6rem;
-    }
 
 }
+
+@media (max-width: 768px) {
+    .formulario {
+        width: auto;
+        text-align: center;
+    }
+}
+
+
+
 
 
 /*Esta es una regla creada para no poder seleccionar el texto en los títulos, por cuestiones estéticas*/

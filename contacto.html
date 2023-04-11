@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiClub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo-light.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html#team">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact min-vh-100">
+        <div class="container-fluid form-contact">
+            <div class="row form-title text-center">
+                <h2>¿Tienes una consulta o sugerencia para nosotros?</h2>
+                <h2>¡Escríbenos!</h2>
+            </div>
+
+            <form action="" class="formulario">
+                <div class="row form-row">
+                    <div class="col-12 col-lg-2">
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input type="text">
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <label for="">Apellido</label>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row form-row">
+                    <div class="col-12 col-lg-2">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input type="email">
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <label for="">Teléfono</label>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="row form-row">
+                    <div class="col-12 col-lg-2">
+                        <label for="">Mensaje</label>
+                    </div>
+                    <div class="col-12 col-lg-10 mensaje">
+                        <textarea class="textarea" id="mensaje" placeholder="Escribe aquí tu mensaje..." ></textarea>
+                    </div>
+                </div>
+
+                <div class="row form-button">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <input type="submit" class="button" value="Enviar Mensaje">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    
+
+    <footer>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
