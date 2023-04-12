@@ -1,26 +1,45 @@
-//Hidden Footer
-const cardsContainer = document.getElementById('cards');
-const hiddenFooter = document.getElementById('hidden');
+//offset de la navbar
+// obtiene la altura de la barra de navegación
+const navbarHeight = document.getElementById('navbar').offsetHeight;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.target.id === 'cards') {
-      if (entry.isIntersecting) {
-        hiddenFooter.style.display = 'fixed';
-      } else {
-        hiddenFooter.style.display = 'none';
-      }
-    }
+// selecciona todos los enlaces que utilizan la etiqueta de anclaje
+const links = document.querySelectorAll('a[href^="#"]');
+
+// añade un evento click a cada enlace
+links.forEach(link => {
+  link.addEventListener('click', function(event) {
+    // previene el comportamiento predeterminado del enlace
+    event.preventDefault();
+    
+    // obtiene el objetivo del enlace (es decir, el ID del elemento)
+    const target = document.querySelector(this.getAttribute('href'));
+    
+    // obtiene la posición del objetivo en la página
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    
+    // calcula la posición final del desplazamiento, restando la altura de la barra de navegación
+    const finalPosition = targetPosition - navbarHeight;
+    
+    // realiza el desplazamiento suave a la posición final
+    window.scrollTo({
+      top: finalPosition,
+      behavior: 'smooth'
+    });
   });
 });
+//
 
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1,
-};
+//Hidden Footer
+const cardsDiv = document.getElementById('cards');
+const hiddenFooter = document.getElementById('hidden');
 
-observer.observe(cardsContainer, options);
+cardsDiv.addEventListener('scroll', () => {
+  if (cardsDiv.scrollTop > 0) {
+    hiddenFooter.style.display = 'fixed';
+  } else {
+    hiddenFooter.style.display = 'none';
+  }
+});
 //
 
 const reserva = {

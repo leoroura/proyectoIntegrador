@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/FAVICON-01.png">
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo-light.png" alt="logo">
+            <a class="navbar-brand" href="#hero">
+                <img src="./assets/images/sushilight.svg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +27,7 @@
                         <a class="nav-link" href="#hero">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Nosotros</a>
+                        <a class="nav-link" href="#cards">Nosotros</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#team">Equipo</a>
@@ -54,18 +55,22 @@
         </div>
     </section>
     <!--Cards-->
-    <container id="cards">
-        <section id="about">
+    <div id="cards">
+        <section>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-6 cardset">
                         <div class="cardtext">
                             <h2>Qué ofrecemos</h2>
+                            <hr>
                             <p>Sushiclub ofrece en franquicia tanto la modalidad de Restó, como la modalidad de Delivery & Take away (o ambas en fusión). 
                                 Brindamos el 100 % de nuestro know how para que tu proyecto tenga un alto rendimiento a corto plazo. 
                                 Para esto, contamos con un equipo de gran experiencia en el rubro, y una modalidad de especial capacitación, 
                                 supervisión y asesoramiento para ofrecer al franquiciado la tranquilidad, 
-                                orden y seguridad necesaria para un comienzo exitoso.</p>
+                                orden y seguridad necesaria para un comienzo exitoso.
+                                Somos número 1 en ventas en Buenos Aires, Capital Federal, y estamos trabajando en aumentar nuestras franquicias para tu comodidad,
+                                actualmente nos hemos expandido a Córdoba, Chaco, Mendoza y Tucumán.
+                                No busques copias, ni te conformes con menos. Vení a comer el mejor sushi de estilo japonés en Sushiclub.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 imagecard">
@@ -81,16 +86,16 @@
                     <div class="col-12 col-md-6 cardset" >
                         <div class="cardtext">
                             <h2>¿Quiénes Somos?</h2>
+                            <hr>
                             <p>Somos una empresa en constante crecimiento que siente pasión por lo que hace, y por ello, 
                             buscamos un perfil de franquiciado que tenga las mismas ganas y motivación para superarse día a día. 
                             Vamos en busca de personas proactivas, con un enfoque comercial, que puedan apreciar el arte culinario, 
                             aplicar los controles necesarios para garantizar la máxima calidad del producto, 
-                            y manejar sus equipos de trabajo a la perfección con una mezcla de conocimientos, ganas y empuje.</p>
-                            <p>Sushiclub ofrece en franquicia tanto la modalidad de Restó, como la modalidad de Delivery & Take away (o ambas en fusión). 
-                                Brindamos el 100 % de nuestro know how para que tu proyecto tenga un alto rendimiento a corto plazo. 
-                                Para esto, contamos con un equipo de gran experiencia en el rubro, y una modalidad de especial capacitación, 
-                                supervisión y asesoramiento para ofrecer al franquiciado la tranquilidad, 
-                                orden y seguridad necesaria para un comienzo exitoso.</p>
+                            y manejar sus equipos de trabajo a la perfección con una mezcla de conocimientos, ganas y empuje.
+                            Somos la única franquicia de Sushi argentino que hace justicia a la tradición Japonesa y se basa en sus recetas milenarias.
+                            Nuestra empresa inició hace veinte años en el barrio de Quilmes, donde inmigrantes Japoneses decidieron emprender su propio negocio,
+                            actualmente contratando cocineros y empleados japoneses y argentinos, formando un pilar importante en la cultura Nikkei en el país.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -102,6 +107,7 @@
                     <div class="col-12 col-md-6 cardset" >
                         <div class="cardtext">
                             <h2>Nuestro Equipo</h2>
+                            <hr>
                             <p>Praesent non nibh eget metus ultrices euismod. Aenean ac massa in sem consequat bibendum. Nam ut faucibus lectus.
                             Integer leo nisi, dignissim non sem tincidunt, tempor bibendum mi. Mauris imperdiet, tortor id vulputate sollicitudin,
                             massa lorem dapibus sem, et ullamcorper libero risus ut ante. Etiam eros erat, facilisis vel turpis quis, tristique
@@ -118,7 +124,7 @@
             </div>
         </section>
         <!--Segundo Header Oculto-->
-        <nav class="navbar sticky-bottom bg-body-tertiary hidden-footer" id="hidden">
+        <nav class="navbar sticky-bottom hidden-footer" id="hidden">
             <div class="container-fluid">
                 <a class="navbar-brand ms-auto" href="#">
                     Tel. +54 11 9456-1953
@@ -127,12 +133,56 @@
             </div>
         </nav>
         <!--Final de Header Oculto-->
-    </container>
-    <footer>
-        <a>
-            <p>404 el footer todavia no se hizo.</p>
-        </a>
-    </footer>
+    </div>
+<!--Footer real-->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                <img src="./assets/images/icons8-facebook-f.svg" alt="facebook">
+            </a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                <img src="./assets/images/icons8-twitter.svg" alt="twitter">
+            </a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+            <img src="./assets/images/icons8-google.svg" alt="google">
+            </a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                <img src="./assets/images/icons8-instagram.svg" alt="instagram">
+            </a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                <img src="./assets/images/icons8-linkedin.svg" alt="linkedin">
+            </a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                <img src="./assets/images/icons8-github.svg" alt="github">
+            </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Leonel Roura, Lucia Colqui, Franco Della Vacchia.</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+<!--Final del Footer real-->
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
