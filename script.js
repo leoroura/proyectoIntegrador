@@ -1,3 +1,28 @@
+//Hidden Footer
+const cardsContainer = document.getElementById('cards');
+const hiddenFooter = document.getElementById('hidden');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.target.id === 'cards') {
+      if (entry.isIntersecting) {
+        hiddenFooter.style.display = 'fixed';
+      } else {
+        hiddenFooter.style.display = 'none';
+      }
+    }
+  });
+});
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1,
+};
+
+observer.observe(cardsContainer, options);
+//
+
 const reserva = {
     nombre: '',
     telefono: '',
